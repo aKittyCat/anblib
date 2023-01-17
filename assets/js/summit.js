@@ -10,6 +10,7 @@ window.addEventListener("load", function() {
     })
     .then(() => {
       alert("Success!");
+      window.location.reload();
     })
   });
 });
