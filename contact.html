@@ -61,8 +61,7 @@
           <li class="dropdown"><a href="#"><span>สำหรับคุณ</span> <i
                 class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a
-                  href="anbsearch.html">ระบบสืบค้นหนังสือ</a>
+              <li><a href="anbsearch.html">ระบบสืบค้นหนังสือ</a>
               </li>
               <li class="dropdown"><a href="#"><span>ความรู้ที่น่าสนใจ</span> <i
                     class="bi bi-chevron-down dropdown-indicator"></i></a>
@@ -178,9 +177,9 @@
                   required></div>
               <div class="mt-3 form-group"><input name="ข้อความ" type="text" class="form-control" placeholder="ข้อความ"
                   required></div>
-                  <div class="d-grid gap-2 col-3 mx-auto p-2">
-              <button href="contact.html" type="submit" class="btn btn-danger text-center" value="Submit">ส่ง</button>
-            </div>
+              <div class="d-grid gap-2 col-3 mx-auto p-2">
+                <button href="contact.html" type="submit" class="btn btn-danger text-center" value="Submit">ส่ง</button>
+              </div>
             </form>
           </div><!-- End Contact Form -->
 
@@ -261,6 +260,38 @@
 
   </footer><!-- End Footer -->
   <!-- End Footer -->
+
+  <!-- Messenger ปลั๊กอินแชท Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your ปลั๊กอินแชท code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "100837742914196");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v15.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/th_TH/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
