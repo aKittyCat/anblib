@@ -94,7 +94,8 @@
           <h2 data-aos="fade-up">Anuban Nakhon Ratchasima School Library</h2>
           <p data-aos="fade-up" data-aos-delay="100">ระบบสืบค้นหนังสือ ห้องสมุดโรงเรียนอนุบาลนครราชสีมา</p>
 
-          <form action="anbsearch.html" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
+          <form action="anbsearch.html" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up"
+            data-aos-delay="200">
             <input type="text" class="form-control" placeholder="ระบุคำที่ต้องการสืบค้น">
             <button type="submit" class="btn btn-danger">ค้นหา</button>
           </form>
@@ -154,8 +155,8 @@
             <div>
               <h4 class="title">คลังรูปภาพ</h4>
               <p class="description"></p>
-              <a href="https://sites.google.com/view/anbkoratlib/คลงรปภาพ" class="readmore stretched-link"><span>เพิ่มเติม</span><i
-                  class="bi bi-arrow-right"></i></a>
+              <a href="https://sites.google.com/view/anbkoratlib/คลงรปภาพ"
+                class="readmore stretched-link"><span>เพิ่มเติม</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -241,7 +242,8 @@
               <div class="card-img">
                 <img src="assets/img/pic/ระเบียบการใช้คอมพิวเตอร์ในการสืบค้น.png" alt="" class="img-fluid">
               </div>
-              <h3><a href="service-details-extra-plus.html" class="stretched-link">ระเบียบการใช้คอมพิวเตอร์ในการสืบค้น</a></h3>
+              <h3><a href="service-details-extra-plus.html"
+                  class="stretched-link">ระเบียบการใช้คอมพิวเตอร์ในการสืบค้น</a></h3>
             </div>
           </div><!-- End Card Item -->
 
@@ -296,7 +298,9 @@
               Line Official Account ของห้องสมุดโรงเรียนอนุบาลนครราชสีมา
             </p>
             <p>
-              &nbsp;&nbsp;&nbsp;&nbsp;แจ้งข่าวประชาสัมพันธ์ผ่านทางมือถือผ่านแอพพลิเคชั่นไลน์ สามารถติดต่อสอบถามได้สะดวกรวดเร็วมากยิ่งขึ้น และมีกิจกรรมแลกของรางวัลอีกมากมาย มาแอดไลน์ของห้องสมุดกันเถอะ!!!
+              &nbsp;&nbsp;&nbsp;&nbsp;แจ้งข่าวประชาสัมพันธ์ผ่านทางมือถือผ่านแอพพลิเคชั่นไลน์
+              สามารถติดต่อสอบถามได้สะดวกรวดเร็วมากยิ่งขึ้น และมีกิจกรรมแลกของรางวัลอีกมากมาย
+              มาแอดไลน์ของห้องสมุดกันเถอะ!!!
             </p>
           </div>
         </div><!-- Features Item -->
@@ -516,7 +520,8 @@
           </a>
           <p>ห้องสมุดโรงเรียนอนุบาลนครราชสีมา</p>
           <div class="social-links d-flex mt-4">
-            <a href="https://www.facebook.com/profile.php?id=100089014677929" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100089014677929" class="facebook"><i
+                class="bi bi-facebook"></i></a>
             <a href="https://lin.ee/7zVT9FM" class="line"><i class="bi bi-line"></i></a>
           </div>
         </div>
@@ -573,12 +578,43 @@
     </div>
 
   </footer><!-- End Footer -->
-  <!-- End Footer -->
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
+
+  <!-- Messenger ปลั๊กอินแชท Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your ปลั๊กอินแชท code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "100837742914196");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v15.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/th_TH/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
