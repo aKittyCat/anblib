@@ -147,7 +147,8 @@
           </a>
           <p>ห้องสมุดโรงเรียนอนุบาลนครราชสีมา</p>
           <div class="social-links d-flex mt-4">
-            <a href="https://www.facebook.com/profile.php?id=100089014677929" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100089014677929" class="facebook"><i
+                class="bi bi-facebook"></i></a>
             <a href="https://lin.ee/7zVT9FM" class="line"><i class="bi bi-line"></i></a>
           </div>
         </div>
@@ -210,6 +211,38 @@
       class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
+
+  <!-- Messenger ปลั๊กอินแชท Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your ปลั๊กอินแชท code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "100837742914196");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v15.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/th_TH/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
