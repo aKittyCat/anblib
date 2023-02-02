@@ -1,5 +1,3 @@
-AnubanKoratLibrary
-by
-blogger
-google site
-bootstrapmade
+created by AnubanKoratLibrary
+for education
+
