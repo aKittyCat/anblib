@@ -113,8 +113,34 @@
           </div>
         </div>
 
-        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-          <img src="assets/img/pic/welcome.png" class="img-fluid mb-3 mb-lg-0" alt="">
+        <div class="swiper a_slider col-lg-5 order-1 order-lg-2 hero-img" data-aos="fade-up">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="img_box">
+                <img src="assets/img/pic/welcome.png" alt="1">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="img_box">
+                <img src="assets/img/pic/fronth.jpg" alt="2">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="img_box">
+                <img src="assets/img/pic/zone_2h.jpg" alt="3">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="img_box">
+                <img src="assets/img/pic/achildh.jpg" alt="4">
+              </div>
+            </div>
+
+          </div>
         </div>
 
       </div>
@@ -288,7 +314,8 @@
               <li><i class="bi bi-check"></i> ติดต่อประชาสัมพันธ์</li>
               <li><i class="bi bi-check"></i> ติดต่อสอบถาม</li>
             </ul>
-            <a href="https://www.facebook.com/profile.php?id=100089014677929" class="btn btn-danger stretched-link bi bi-facebook">&nbsp;GO</a>
+            <a href="https://www.facebook.com/profile.php?id=100089014677929"
+              class="btn btn-danger stretched-link bi bi-facebook">&nbsp;GO</a>
           </div>
         </div><!-- Features Item -->
 
@@ -630,6 +657,15 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script type="text/javascript">
+    var swiper = new Swiper(".a_slider", {
+      loop: true,
+	    autoplay: { delay: 4000 },
+      SlidePerview: 1,
+    });
+  </script>
 
 </body>
 
