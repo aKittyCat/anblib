@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/js/bootstrap.min.js" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+  <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+    <div class="row">
+      <div class="col-md-6 form-group"> <input type="text" name="name" class="form-control" id="name"
+          placeholder="Your Name" required=""></div>
+      <div class="col-md-6 form-group mt-3 mt-md-0"> <input type="email" class="form-control" name="email" id="email"
+          placeholder="Your Email" required=""></div>
+    </div>
+    <div class="form-group mt-3"> <input type="text" class="form-control" name="subject" id="subject"
+        placeholder="Subject" required=""></div>
+    <div class="form-group mt-3"><textarea class="form-control" name="message" rows="5" placeholder="Message"
+        required=""></textarea></div>
+    <div class="my-3">
+      <div class="loading">Loading</div>
+      <div class="error-message"></div>
+      <div class="sent-message">Your message has been sent. Thank you!</div>
+    </div>
+    <div class="text-center"><button type="submit">Send Message</button></div>
+  </form>
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalMenu">
+    Launch demo modal
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="ModalMenu" tabindex="-1" role="dialog" aria-labelledby="ModalMenuLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalMenuLabel">ความรู้ที่น่าสนใจ</h5>
+          <button type="button" class="close-button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <a href="#" class="btn btn-primary" role="button" data-dismiss="modal">SciMath</a>
+          <a href="#" class="btn btn-warning" role="button" data-dismiss="modal">Scientia</a>
+          <a href="#" class="btn btn-danger" role="button" data-dismiss="modal">Trueplookpanya</a>
+          <a href="#" class="btn btn-success" role="button" data-dismiss="modal">Eduzones</a>
+          <a href="#" class="btn btn-info" role="button" data-dismiss="modal">The Deep Sea</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Modal Example</h2>
+
+  <!-- Trigger/Open The Modal -->
+  <button id="myBtn">Open Modal</button>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title">
+            <img src="assets/img/book/thinking.png" alt="emoji" class="emoji">
+            ความรู้ที่น่าสนใจ</h1>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body flex-center ">
+          <a href="#" class="my-1 col-auto btn btn-primary" role="button" data-dismiss="modal">SciMath</a>
+          <a href="#" class="my-1 col-auto btn btn-warning" role="button" data-dismiss="modal">Scientia</a>
+          <a href="#" class="my-1 col-auto btn btn-danger" role="button" data-dismiss="modal">Trueplookpanya</a>
+          <a href="#" class="my-1 col-auto btn btn-success" role="button" data-dismiss="modal">Eduzones</a>
+          <a href="#" class="my-1 col-auto btn btn-info" role="button" data-dismiss="modal">The Deep Sea</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+</body>
+
+</html>
